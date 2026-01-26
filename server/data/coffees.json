@@ -1,0 +1,84 @@
+{
+  "coffees": [
+    {
+      "id": "819fb8a9-0e0f-4512-87c3-68bdff6bb204",
+      "name": "Ethiopian Yirgacheffe",
+      "description": "A light roasted coffee with bright acidity, and complex fruit and floral notes.",
+      "long_description": null,
+      "image_url": "https://blueapplecoffee.com/cdn/shop/products/Untitleddesign_67_1024x1024.png?v=1658153427",
+      "price_usd": 5.55,
+      "price_gel": 14.99,
+      "title": "Ethiopian Yirgacheffe",
+      "country": "Ethiopia",
+      "caffeine": 120,
+      "ingredients": [
+        "ing_sample2"
+      ],
+      "created_at": "2026-01-26T15:14:40.541Z",
+      "updated_at": "2026-01-26T15:14:40.541Z"
+    },
+    {
+      "id": "6e0e2d73-5b57-47d6-a8b6-48c8554c224a",
+      "name": "Colombian Supremo",
+      "description": "Medium roast with a sweet and rich caramel flavor, balanced acidity and a clean finish.",
+      "long_description": null,
+      "image_url": "https://www.brownjenkins.com/cdn/shop/files/ColombianSupremo.png?v=1704109491",
+      "price_usd": 8.88,
+      "price_gel": 23.98,
+      "title": "Colombian Supremo",
+      "country": "Colombia",
+      "caffeine": 140,
+      "ingredients": [
+        "ing_sample2",
+        "ing_sample3"
+      ],
+      "created_at": "2026-01-26T15:15:33.969Z",
+      "updated_at": "2026-01-26T15:15:33.969Z"
+    },
+    {
+      "id": "4535e5cb-d21b-459e-b02f-6ee0f74d70c0",
+      "name": "Caffuccino",
+      "description": "a brand of Italian-style, instant cream-based dessert mix",
+      "long_description": null,
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzJ-RKcp1AYbYDP_98pCUT__C0fT9EJJAfdw&s",
+      "price_usd": 14.8,
+      "price_gel": 39.97,
+      "title": "Caffuccino",
+      "country": "Italy",
+      "caffeine": 126,
+      "ingredients": [
+        "ing_sample1",
+        "ing_sample2",
+        "ing_sample3"
+      ],
+      "created_at": "2026-01-26T15:20:50.081Z",
+      "updated_at": "2026-01-26T15:20:50.081Z"
+    }
+  ],
+  "ingredients": [
+    {
+      "id": "aa3fe0ae-b752-4b53-bc2f-dbea9b1d85d9",
+      "name": "Arabic beans",
+      "price": 15.99,
+      "description": "High-quality Arabica coffee beans",
+      "strength": "Medium",
+      "flavor": "Fruity"
+    },
+    {
+      "id": "8cc43c15-867b-4932-95f5-6c75ccb0d70b",
+      "name": "Robusta Beans",
+      "price": 12.99,
+      "description": "Strong robusta beans",
+      "strength": "High",
+      "flavor": "Earthy"
+    },
+    {
+      "id": "f49742b8-0efd-423b-b838-e1ec9a90c672",
+      "name": "Vanilla syrup",
+      "price": 8.99,
+      "description": "Sweet vanilla flavoring",
+      "strength": "Low",
+      "flavor": "Sweet"
+    }
+  ]
+}
