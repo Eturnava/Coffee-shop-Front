@@ -53,6 +53,24 @@
       ],
       "created_at": "2026-01-26T15:20:50.081Z",
       "updated_at": "2026-01-26T15:20:50.081Z"
+    },
+    {
+      "id": "f608f794-5133-4f88-8710-6ea83bc85e50",
+      "name": "Ice cream coffee",
+      "description": "a simple Italian dessert combining a scoop of vanilla gelato or ice cream \"drowned\" in a shot of hot espresso",
+      "long_description": null,
+      "image_url": "https://www.insidetherustickitchen.com/wp-content/uploads/2018/07/Untitled-design.jpg",
+      "price_usd": 9.99,
+      "price_gel": 26.98,
+      "title": "Ice cream coffee",
+      "country": "Italy",
+      "caffeine": 59,
+      "ingredients": [
+        "ing_sample3",
+        "ing_sample4"
+      ],
+      "created_at": "2026-01-26T17:27:00.456Z",
+      "updated_at": "2026-01-26T17:27:00.456Z"
     }
   ],
   "ingredients": [
@@ -79,6 +97,14 @@
       "description": "Sweet vanilla flavoring",
       "strength": "Low",
       "flavor": "Sweet"
+    },
+    {
+      "id": "8693daeb-85e0-4285-9216-6d90eae3dca8",
+      "name": "Ice cream",
+      "price": 15.99,
+      "description": "Vanilla Ice-cream",
+      "strength": "Low",
+      "flavor": "Sweety"
     }
   ]
 }
