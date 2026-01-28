@@ -15,9 +15,13 @@ import {
 
 export default function Cart() {
   const { items, removeFromCart, clearCart, getTotalUsd, getTotalGel, purchase } = useCart();
-  const { currency, formatPrice } = useCurrency();
+  const { currency, formatPrice, fxRateUsdGel } = useCurrency();
 
-  const total = currency === 'USD' ? getTotalUsd() : getTotalGel();
+  const totalUsd = getTotalUsd();
+  const totalGelStored = getTotalGel();
+  const totalGelLive = fxRateUsdGel ? totalUsd * fxRateUsdGel : totalGelStored;
+
+  const total = currency === 'USD' ? totalUsd : totalGelLive;
   const totalFormatted = currency === 'USD' ? `$${total.toFixed(2)}` : `₾${total.toFixed(2)}`;
 
   if (items.length === 0) {

@@ -9,10 +9,17 @@ const PORT = process.env.PORT ? Number(process.env.PORT) : 3001;
 
 const DATA_FILE = path.resolve(process.cwd(), "server", "data", "coffees.json");
 
+let fxCache = {
+  usdGel: null,
+  fetchedAtMs: 0,
+};
+
+const FX_CACHE_TTL_MS = 5 * 60 * 1000;
+
 app.use(express.json());
 app.use(
   cors({
-    origin: ["http://localhost:8080", "http://localhost:5173"],
+    origin: [/^http:\/\/localhost:\d+$/],
     credentials: false,
   })
 );
@@ -130,6 +137,58 @@ function normalizeIngredientPayload(payload) {
 
 app.get("/health", (_req, res) => {
   res.json({ ok: true });
+});
+
+app.get("/api/fx/usd-gel", async (_req, res) => {
+  try {
+    const now = Date.now();
+    const isFresh = fxCache.usdGel && now - fxCache.fetchedAtMs < FX_CACHE_TTL_MS;
+    if (isFresh) {
+      return res.json({
+        rate: fxCache.usdGel,
+        base: "USD",
+        quote: "GEL",
+        fetched_at: new Date(fxCache.fetchedAtMs).toISOString(),
+        cached: true,
+      });
+    }
+
+    const url = "https://bankofgeorgia.ge/api/currencies/convert/USD/GEL?amountFrom=1";
+    const upstream = await fetch(url);
+    if (!upstream.ok) {
+      throw new Error(`Upstream failed: ${upstream.status}`);
+    }
+    const body = await upstream.json();
+    const rate = Number(body?.data?.rate);
+    if (!Number.isFinite(rate) || rate <= 0) {
+      throw new Error("Invalid rate from upstream");
+    }
+
+    fxCache = {
+      usdGel: rate,
+      fetchedAtMs: now,
+    };
+
+    return res.json({
+      rate,
+      base: "USD",
+      quote: "GEL",
+      fetched_at: new Date(now).toISOString(),
+      cached: false,
+    });
+  } catch (err) {
+    if (fxCache.usdGel) {
+      return res.json({
+        rate: fxCache.usdGel,
+        base: "USD",
+        quote: "GEL",
+        fetched_at: new Date(fxCache.fetchedAtMs).toISOString(),
+        cached: true,
+        stale: true,
+      });
+    }
+    return res.status(502).json({ error: "Failed to fetch FX rate" });
+  }
 });
 
 app.get("/api/coffees", async (_req, res) => {
