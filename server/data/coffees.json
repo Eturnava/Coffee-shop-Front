@@ -6,16 +6,17 @@
       "description": "A light roasted coffee with bright acidity, and complex fruit and floral notes.",
       "long_description": null,
       "image_url": "https://blueapplecoffee.com/cdn/shop/products/Untitleddesign_67_1024x1024.png?v=1658153427",
-      "price_usd": 5.55,
-      "price_gel": 14.99,
+      "price_usd": 11.47,
+      "price_gel": 30.98,
       "title": "Ethiopian Yirgacheffe",
       "country": "Ethiopia",
       "caffeine": 120,
       "ingredients": [
-        "ing_sample2"
+        "aa3fe0ae-b752-4b53-bc2f-dbea9b1d85d9",
+        "8cc43c15-867b-4932-95f5-6c75ccb0d70b"
       ],
       "created_at": "2026-01-26T15:14:40.541Z",
-      "updated_at": "2026-01-26T15:14:40.541Z"
+      "updated_at": "2026-01-30T15:45:04.452Z"
     },
     {
       "id": "6e0e2d73-5b57-47d6-a8b6-48c8554c224a",
@@ -23,17 +24,17 @@
       "description": "Medium roast with a sweet and rich caramel flavor, balanced acidity and a clean finish.",
       "long_description": null,
       "image_url": "https://www.brownjenkins.com/cdn/shop/files/ColombianSupremo.png?v=1704109491",
-      "price_usd": 8.88,
-      "price_gel": 23.98,
+      "price_usd": 11.84,
+      "price_gel": 31.979999999999997,
       "title": "Colombian Supremo",
       "country": "Colombia",
       "caffeine": 140,
       "ingredients": [
-        "ing_sample2",
-        "ing_sample3"
+        "8cc43c15-867b-4932-95f5-6c75ccb0d70b",
+        "6bce0765-d8b7-4007-ba8f-5071145cab6c"
       ],
       "created_at": "2026-01-26T15:15:33.969Z",
-      "updated_at": "2026-01-26T15:15:33.969Z"
+      "updated_at": "2026-01-30T15:45:14.055Z"
     },
     {
       "id": "4535e5cb-d21b-459e-b02f-6ee0f74d70c0",
@@ -41,18 +42,19 @@
       "description": "a brand of Italian-style, instant cream-based dessert mix",
       "long_description": null,
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzJ-RKcp1AYbYDP_98pCUT__C0fT9EJJAfdw&s",
-      "price_usd": 14.8,
-      "price_gel": 39.97,
+      "price_usd": 17.39,
+      "price_gel": 46.96,
       "title": "Caffuccino",
       "country": "Italy",
       "caffeine": 126,
       "ingredients": [
-        "ing_sample1",
-        "ing_sample2",
-        "ing_sample3"
+        "f49742b8-0efd-423b-b838-e1ec9a90c672",
+        "8693daeb-85e0-4285-9216-6d90eae3dca8",
+        "6bce0765-d8b7-4007-ba8f-5071145cab6c",
+        "67ede586-ed13-4d02-81b3-9e0ac530dc25"
       ],
       "created_at": "2026-01-26T15:20:50.081Z",
-      "updated_at": "2026-01-26T15:20:50.081Z"
+      "updated_at": "2026-01-30T15:45:23.395Z"
     },
     {
       "id": "f608f794-5133-4f88-8710-6ea83bc85e50",
@@ -60,17 +62,37 @@
       "description": "a simple Italian dessert combining a scoop of vanilla gelato or ice cream \"drowned\" in a shot of hot espresso",
       "long_description": null,
       "image_url": "https://www.insidetherustickitchen.com/wp-content/uploads/2018/07/Untitled-design.jpg",
-      "price_usd": 9.99,
-      "price_gel": 26.98,
+      "price_usd": 17.02,
+      "price_gel": 45.95,
       "title": "Ice cream coffee",
       "country": "Italy",
       "caffeine": 59,
       "ingredients": [
-        "ing_sample3",
-        "ing_sample4"
+        "f49742b8-0efd-423b-b838-e1ec9a90c672",
+        "8693daeb-85e0-4285-9216-6d90eae3dca8",
+        "67ede586-ed13-4d02-81b3-9e0ac530dc25",
+        "f0e5744f-f09c-4b03-adb3-1c406070fff2"
       ],
       "created_at": "2026-01-26T17:27:00.456Z",
-      "updated_at": "2026-01-26T17:27:00.456Z"
+      "updated_at": "2026-01-30T15:45:31.055Z"
+    },
+    {
+      "id": "392c116c-06e1-4a31-abb5-95fe9597737b",
+      "name": "Americano",
+      "description": "Espresso but more chill. Same caffeine, less punch-in-the-face. Smooth.",
+      "long_description": null,
+      "image_url": "https://assets.beanbox.com/blog_images/AB7ud4YSE6nmOX0iGlgA.jpeg",
+      "price_usd": 8.14,
+      "price_gel": 21.979999999999997,
+      "title": "Americano",
+      "country": "Italy/America",
+      "caffeine": 120,
+      "ingredients": [
+        "6bce0765-d8b7-4007-ba8f-5071145cab6c",
+        "67ede586-ed13-4d02-81b3-9e0ac530dc25"
+      ],
+      "created_at": "2026-01-28T16:18:51.655Z",
+      "updated_at": "2026-01-30T15:45:43.905Z"
     }
   ],
   "ingredients": [
@@ -105,6 +127,30 @@
       "description": "Vanilla Ice-cream",
       "strength": "Low",
       "flavor": "Sweety"
+    },
+    {
+      "id": "6bce0765-d8b7-4007-ba8f-5071145cab6c",
+      "name": "Espresso",
+      "price": 16.99,
+      "description": "Espresso",
+      "strength": "Medium",
+      "flavor": "Biterness"
+    },
+    {
+      "id": "67ede586-ed13-4d02-81b3-9e0ac530dc25",
+      "name": "Hot water",
+      "price": 2.99,
+      "description": "Hot water",
+      "strength": "Medium",
+      "flavor": "Water"
+    },
+    {
+      "id": "f0e5744f-f09c-4b03-adb3-1c406070fff2",
+      "name": "Milk",
+      "price": 15.98,
+      "description": "Fresh milk",
+      "strength": "Low",
+      "flavor": "Mildly clean"
     }
   ]
 }
